@@ -1,6 +1,9 @@
 import React from 'react'
 
 const Product = ({product}) => {
+
+  const blank = "_blank"
+
   return (
     <div className='movie'>
       <div>
@@ -13,7 +16,7 @@ const Product = ({product}) => {
         <span>{product.name}</span><br/>
         <span>Ratings : {product.rating}</span>
         <h3>${product.price}</h3>
-        <span><a href={product.product_link} target='_blank'>Product Link</a></span>
+        <span><a href={product.product_link} target={blank}>Product Link</a></span>
       </div>
     </div>
   )

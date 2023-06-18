@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Product from './Product';
 
-const API_URL = "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
-
 function App() {
+
+  const API_URL = "https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline";
 
   const [products, setProducts] = useState([])
 
